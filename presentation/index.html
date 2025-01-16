@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accessible Page</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main class="container">
+      <section class="container-box my-3">
+        <div role="button" class="button">I am trying to be a button!</div>
+        <button class="button">I am a button</button>
+      </section>
+
+      <img
+        class="img-fluid rounded image"
+        src="yacht.jpg"
+        alt="White yacht on the water with the sea and sky in the background"
+      />
+      <img class="img-fluid rounded image" src="background-image.jpg" alt="" />
+
+      <section class="my-5">
+        <!-- Links -->
+
+        <p>
+          What are you waiting for? Visit LeadsMart
+          <span onclick="">here</span>.
+        </p>
+
+        <p>
+          What are you waiting for? Visit LeadsMart
+          <a href="#" class="text-decoration-underline">here</a>.
+        </p>
+
+        <p>
+          What are you waiting for?
+          <a href="#" class="text-primary">Visit LeadsMart here</a> .
+        </p>
+      </section>
+
+      <!-- Forms -->
+
+      <form class="my-3">
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="First Name" />
+        </div>
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Last Name" />
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" placeholder="Email" />
+        </div>
+        <div class="mb-3">
+          <input type="number" class="form-control" placeholder="Age" />
+        </div>
+        <div class="mb-3 d-flex gap-2">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            id="newsletter"
+            name="newsletter"
+          />
+          <p>I agree to terms and conditions</p>
+        </div>
+
+        <button class="btn btn-danger">Go</button>
+      </form>
+
+      <hr />
+
+      <form class="row g-3 my-4">
+        <div class="col-md-6">
+          <label for="first-name" class="form-label">First Name:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="first-name"
+            placeholder="Joe"
+          />
+        </div>
+        <div class="col-md-6">
+          <label for="last-name" class="form-label">Last Name:</label>
+          <input type="text" class="form-control" id="last-name" placeholder="Doe" />
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email:</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="joe_doe@gmail.com"
+          />
+        </div>
+        <div class="col-md-6">
+          <label for="age" class="form-label">Age:</label>
+          <input
+            type="number"
+            class="form-control"
+            id="age"
+            placeholder="Enter your age"
+          />
+        </div>
+        <div class="mb-3">
+          <input type="checkbox" class="form-check-input" id="agree" name="agree" />
+          <label for="agree" class="form-check-label">
+            I agree to the terms and conditions
+          </label>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-success">Submit</button>
+        </div>
+      </form>
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
